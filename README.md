@@ -1,3 +1,8 @@
+# Forked
+
+No cicd pipeline currently, just build locally and push to ecr
+
+
 # eks-auth-proxy
 
 This proxy server is designed to sit in front of applications that run in EKS clusters and access the Kubernetes API. It prevents access until the user has logged in using a third party provider (e.g. Google, Github, etc.) that can be federated with one or more AWS IAM roles. It then creates an EKS authorization token based on the temporary credentials it receives from assuming one of the roles. This is passed on as `Bearer` token via the `Authorization` header to the upstream server. This is particularly useful for exposing and protecting the Kubernetes dashboard.
