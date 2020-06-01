@@ -10,4 +10,4 @@ RUN yarn install
 
 COPY . /app
 
-CMD ./start
+ENTRYPOINT ["node","src/index.js"]
